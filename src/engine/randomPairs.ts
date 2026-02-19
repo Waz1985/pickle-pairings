@@ -6,12 +6,6 @@ function makeId(prefix: string) {
 }
 
 export function generateRandomRound(players: Player[], round: number): Match[] {
-  if (players.length % 4 !== 0) {
-    throw new Error(
-      "La cantidad de jugadores debe ser múltiplo de 4 (4/8/12/16).",
-    );
-  }
-
   const shuffled = shuffle(players);
 
   const pairs: Array<[Player, Player]> = [];
