@@ -25,9 +25,18 @@
       "bundler": "metro",
       "output": "static"
     },
-    "plugins": ["expo-router", "expo-sqlite"],
+    "plugins": [
+      "expo-router",
+      "expo-sqlite"
+    ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "bf78fc05-aa0f-4c86-a0bc-6f4d743c623a"
+      }
     }
   }
 }
